@@ -1,8 +1,7 @@
 ﻿int Prompt(string message)
 {
     Console.Write(message);
-    string inputString = Console.ReadLine();
-    int value = Convert.ToInt32(inputString);
+    int value = int.Parse(Console.ReadLine() ?? "0");
     return value;
 }
 
